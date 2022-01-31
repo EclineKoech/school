@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.admin.AdminController">
+    <children>
+        <TabPane layoutX="14.0" layoutY="14.0" prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Students">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="694.0" prefWidth="1292.0">
+                            <children>
+                                <HBox layoutX="307.0" layoutY="1.0" prefHeight="688.0" prefWidth="975.0">
+                                    <children>
+                                        <TableView fx:id="studentdata" accessibleRole="DATE_PICKER" prefHeight="688.0" prefWidth="973.0">
+                                            <columns>
+                                                <TableColumn fx:id="idcolumn" prefWidth="47.0" text="ID" />
+                                                <TableColumn fx:id="fcolumn" prefWidth="114.0" text="FIRSTNAME" />
+                                                <TableColumn fx:id="lcolumn" prefWidth="95.0" text="LASTNAME" />
+                                                <TableColumn fx:id="gradecolumn" prefWidth="57.0" text="GRADE" />
+                                                <TableColumn fx:id="teachercolumn" prefWidth="133.0" text="CLASS TEACHER" />
+                                                <TableColumn fx:id="parentcolumn" minWidth="4.0" prefWidth="126.0" text="PARENT NAME" />
+                                                <TableColumn fx:id="phonecolumn" prefWidth="101.0" text="PHONE NO." />
+                                                <TableColumn fx:id="dobcolumn" prefWidth="106.0" text="DOB" />
+                                                <TableColumn fx:id="feepaidcolumn" prefWidth="99.0" text="FEE PAID" />
+                                                <TableColumn fx:id="feebalancecolumn" prefWidth="92.0" text="FEE BALANCE" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </HBox>
+                                <VBox layoutX="-4.0" layoutY="-1.0" prefHeight="689.0" prefWidth="310.0">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="160.0" text="ADD STUDENTS" textFill="#bc0a0a">
+                                            <VBox.margin>
+                                                <Insets left="15.0" top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="id" alignment="CENTER" promptText="ID" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="firstname" alignment="CENTER" layoutX="25.0" layoutY="54.0" promptText="FIRST NAME" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="lastname" alignment="CENTER" layoutX="10.0" layoutY="78.0" promptText="LAST NAME" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="grade" alignment="CENTER" layoutX="10.0" layoutY="102.0" promptText="GRADE" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="classteacher" alignment="CENTER" layoutX="10.0" layoutY="126.0" promptText="CLASS TEACHER" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="parentname" alignment="CENTER" layoutX="10.0" layoutY="150.0" promptText="PARENT NAME" style="-fx-background-color: gray;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="phonenumber" alignment="CENTER" layoutX="10.0" layoutY="174.0" promptText="PARENT PHONE NUMBER" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <DatePicker fx:id="datepicker" nodeOrientation="RIGHT_TO_LEFT" prefHeight="24.0" prefWidth="293.0" promptText="DATE OF BIRTH" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                        <TextField fx:id="feepaid" alignment="CENTER" layoutX="25.0" layoutY="327.0" promptText="FEE PAID" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="feebal" alignment="CENTER" layoutX="10.0" layoutY="366.0" promptText="FEE BALANCE" style="-fx-background-color: grey;">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <Button fx:id="addentry" mnemonicParsing="false" onAction="#addStudent" prefHeight="32.0" prefWidth="280.0" style="-fx-background-color: #9a0101;" text="ADD ENTRY" textFill="WHITE">
+                                            <VBox.margin>
+                                                <Insets bottom="3.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="clearform" layoutX="10.0" layoutY="444.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="33.0" prefWidth="280.0" style="-fx-background-color: #9a0101;" text="CLEAR FORM" textFill="#f5ecec">
+                                            <VBox.margin>
+                                                <Insets bottom="3.0" left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="loaddata" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" onAction="#loadStudentData" prefHeight="28.0" prefWidth="280.0" style="-fx-background-color: #9a0101;" text="LOAD DATA" textFill="WHITE">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab text="Staff">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutY="30.0" prefHeight="513.0" prefWidth="229.0">
+                           <children>
+                              <TextField promptText="ID" />
+                              <TextField promptText="FIRSTNAME" />
+                              <TextField promptText="LASTNAME" />
+                              <TextField promptText="DEPARTMENT" />
+                              <TextField layoutX="10.0" layoutY="10.0" promptText="TSC NO." />
+                              <TextField promptText="ID NUMBER" />
+                              <TextField promptText="EMAIL" />
+                              <TextField promptText="PHONE NUMBER" />
+                              <DatePicker prefHeight="26.0" prefWidth="234.0" promptText="DATE OF BIRTH" />
+                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="ADD ENTRY" />
+                              <Button layoutX="10.0" layoutY="244.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="229.0" text="CLEAR FORM" />
+                              <Button layoutX="10.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="229.0" text="LOAD DATA" />
+                           </children>
+                        </VBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="1.0" prefHeight="29.0" prefWidth="86.0" text="ADD STAFF" />
+                        <HBox layoutX="232.0" prefHeight="664.0" prefWidth="1047.0">
+                           <children>
+                              <TableView prefHeight="664.0" prefWidth="1047.0">
+                                <columns>
+                                    <TableColumn prefWidth="59.0" text="ID" />
+                                  <TableColumn prefWidth="81.0" text="FIRSTNAME" />
+                                  <TableColumn prefWidth="87.0" text="LASTNAME" />
+                                    <TableColumn prefWidth="92.0" text="DEPARTMENT" />
+                                    <TableColumn minWidth="0.0" prefWidth="73.0" text="TSC NO." />
+                                    <TableColumn prefWidth="88.0" text="ID NUMBER" />
+                                    <TableColumn prefWidth="105.0" text="EMAIL" />
+                                    <TableColumn prefWidth="122.0" text="PHONE NO." />
+                                    <TableColumn prefWidth="113.0" text="DOB" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

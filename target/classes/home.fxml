@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="906.0" prefWidth="1349.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.home.HomeController">
+   <children>
+      <Pane layoutX="-23.0" layoutY="-6.0" prefHeight="245.0" prefWidth="1374.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="817.0" layoutX="282.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/cover.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="263.0" fitWidth="261.0" layoutX="21.0" layoutY="6.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="271.0" fitWidth="289.0" layoutX="1099.0" layoutY="-2.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" hgap="5.0" layoutX="3.0" layoutY="315.0" prefHeight="538.0" prefWidth="1329.0" vgap="5.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="315.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="255.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="255.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="255.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="177.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="206.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="ATTENDANCE" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="84.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button fx:id="home" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="STUDENTS" textFill="WHITE" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="HOME" size="50" text="" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </graphic>
+            </Button>
+            <Button fx:id="students" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: #fff;" text="HOME">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="ENVIRA" size="50" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="staff" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="STAFF" textFill="WHITE" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="STAR" size="50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES" />
+               </graphic>
+            </Button>
+            <Button fx:id="accounts" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="ACCOUNTS" textFill="WHITE" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="MEDAL" size="50" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES" />
+               </graphic>
+            </Button>
+            <Button fx:id="library" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="LIBRARY" textFill="#ebe0e0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="STAR" selectionStart="1" size="50" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES" />
+               </graphic>
+            </Button>
+            <Button fx:id="home1" alignment="CENTER" contentDisplay="TOP" layoutX="511.0" layoutY="81.0" mnemonicParsing="false" prefHeight="196.0" prefWidth="309.0" style="-fx-background-color: GREY;" text="HOME" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIconView fill="#561e1e" glyphName="HOME" size="50" text="" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </graphic>
+            </Button>
+            <FontAwesomeIconView fill="#511515" glyphName="" size="50" wrappingWidth="56.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES" />
+         </children>
+      </GridPane>
+      <Button layoutX="14.0" layoutY="270.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="181.0" style="-fx-background-color: brown;" text="LOGIN" textFill="#f2eeee" />
+      <Button layoutX="1106.0" layoutY="270.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: brown;" text="UPDATE" textFill="#f2eeee" />
+   </children>
+</AnchorPane>
